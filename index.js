@@ -5,3 +5,6 @@ function findMatching(array, name) {
 function fuzzyMatch(array, letters) {
   return array.filter(function (item) {return item.slice(0, letters.length) === letters;});
 }
+function matchName(array, string) {
+  return array.filter(function (item) {return item.name === string;});
+}
